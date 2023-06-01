@@ -38,7 +38,7 @@ public class RateLimiterTest {
     }
 
     /**
-     * 预消费
+     * 预消费(只要当前令牌>=0 即可消费，但是消费的负值需要令牌桶补充)
      */
     @Test
     public void testAcquire2() throws Exception {
